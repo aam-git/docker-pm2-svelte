@@ -4,7 +4,7 @@ LABEL maintainer="AAMServices <info@aamservices.uk>"
 WORKDIR /usr/src/app
 
 RUN apk add --no-cache git curl && \
-    curl -fsSL "https://raw.githubusercontent.com/aam-git/docker-pm2-svelte/master/ecosystem.config.js" -o ecosystem.config.js && \
+    curl -fsSL "https://raw.githubusercontent.com/aam-git/docker-pm2-svelte/dev/ecosystem.config.js" -o ecosystem.config.js && \
     npx degit "sveltejs/template" svelte && \
     cd svelte && \
     npm install

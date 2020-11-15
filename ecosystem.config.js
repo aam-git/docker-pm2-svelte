@@ -3,7 +3,7 @@
        {
          name: 'svelte',
          cwd: '/usr/src/app/svelte/',
-         script: 'NODE_ENV=production && npm run build && npm run start',
+         script: 'npm run dev',
          instances: 1,
          autorestart: true,
          watch: false,

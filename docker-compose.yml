@@ -1,7 +1,7 @@
 version: '2'
 services:
   svelte:
-    image: aamservices/pm2-svelte:latest
+    image: aamservices/pm2-svelte:dev
     restart: unless-stopped
     volumes:
       - svelte_data:/usr/src/app
